@@ -227,7 +227,7 @@ extension  = xsl
 
 ;zend_extension = ioncube
 ;zend_extension = opcache
-;zend_extension = xdebug
+zend_extension = xdebug
 
 ; ----------------------------
 ; Extensions settings
@@ -488,10 +488,10 @@ xhprof.output_dir            = "%sprogdir%/userdata/temp"
 ;profile  Enables Profiling
 ;trace    Enables the Function Trace feature
 ;Example: xdebug.mode=develop,trace
-xdebug.mode                      = off
+xdebug.mode                      = develop,debug
 ;xdebug.client_discovery_header  = ""
-;xdebug.client_host              = "localhost"
-;xdebug.client_port              = 9003
+xdebug.client_host              = "localhost"
+xdebug.client_port              = 9003
 ;xdebug.connect_timeout_ms       = 200
 ;xdebug.discover_client_host     = off
 ;xdebug.gc_stats_output_name     = "gcstats.%p"
